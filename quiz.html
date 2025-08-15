@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <!-- Start Screen: Welcome page shown before quiz begins -->
+    <div id="start-screen">
+        <h1>JavaScript Fundamentals Quiz</h1>
+        <div style="text-align: center; padding: 40px;">
+            <h2>Welcome to the JavaScript Quiz!</h2>
+            <!-- Start button to begin the quiz -->
+            <button id="start-button">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Container: Main quiz interface (hidden initially) -->
+    <div id="quiz-container" class="hidden">
+        <h1>JavaScript Fundamentals Quiz</h1>
+        <!-- Container for displaying current question -->
+        <div id="question-container"></div>
+        <!-- Container for displaying answer options as buttons -->
+        <div id="options-container"></div>
+        <!-- Navigation button to move to next question or submit quiz -->
+        <button id="next-button">Next Question</button>
+    </div>
+
+    <!-- Score Container: Results page shown after quiz completion (hidden initially) -->
+    <div id="score-container" class="hidden">
+        <h2>Your Score:</h2>
+        <!-- Element to display final score and percentage -->
+        <p id="score"></p>
+        <!-- Button to restart the quiz and return to start screen -->
+        <button id="restart-button">
+            Restart Quiz
+        </button>
+    </div>
+
+    <!-- Link to external JavaScript file for quiz functionality -->
+    <script src="quiz.js"></script>
+</body>
+</html>
